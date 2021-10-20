@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# kindly taken from https://bogomolov.tech/Telegram-notification-on-SSH-login/
-# replace CHAT_ID and BOT_TOKEN
+# taken from https://bogomolov.tech/Telegram-notification-on-SSH-login/ and adapted
+# this script expects TELEGRAM_CHAT_ID and TELEGRAM_BOT_ID to be environment variables
     
-CHAT_ID=<chat_id>
-BOT_TOKEN=<bot_token>
+CHAT_ID=$TELEGRAM_CHAT_ID
+BOT_TOKEN=$TELEGRAM_BOT_ID
 
 # this 3 checks (if) are not necessary but should be convenient
 if [ "$1" == "-h" ]; then
